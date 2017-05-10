@@ -30,7 +30,7 @@
     "lru-cache": "^2.6.4",
     "object-sizeof": "^1.0.10",
     "random-js": "^1.0.3",
-    "typescript": "2.2.0",
+    "typescript": "2.3.0",
     "underscore": "^1.8.3"
   },
   "devDependencies": {
