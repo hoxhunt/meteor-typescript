@@ -52,7 +52,6 @@ function getDeps(sourceFile, checker) {
 
   function isExternal(module) {
     console.log(module)
-    console.log(JSON.stringify(module,null,2))
     var decl = module.declarations[0];
     var sf = decl.getSourceFile();
     return sf.isDeclarationFile;
