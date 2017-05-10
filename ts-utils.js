@@ -62,6 +62,8 @@ function getDeps(sourceFile, checker) {
     var paths = new Set();
     _.each(sourceFile.imports, function(importName) {
       var module = checker.getSymbolAtLocation(importName);
+      console.log('importName: ', importName)
+      console.log('!!!!!!!!!!!!')
       if (module && !isExternal(module)) {
         var path = getModulePath(module);
         if (path) {
