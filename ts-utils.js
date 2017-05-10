@@ -37,6 +37,8 @@ function prepareSourceMap(sourceMapContent, fileContent, sourceMapPath) {
  * will be in the output too.
  */
 function getDeps(sourceFile, checker) {
+  console.log('Sourcefile:', sourceFile)
+  console.log('####')
   var modules = [];
 
   function getModulePath(module) {
@@ -51,7 +53,6 @@ function getDeps(sourceFile, checker) {
   }
 
   function isExternal(module) {
-    console.log(module)
     var decl = module.declarations[0];
     var sf = decl.getSourceFile();
     return sf.isDeclarationFile;
