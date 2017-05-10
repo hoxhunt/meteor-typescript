@@ -51,6 +51,7 @@ function getDeps(sourceFile, checker) {
   }
 
   function isExternal(module) {
+    if (! module) return null;
     var decl = module.declarations[0];
     var sf = decl.getSourceFile();
     return sf.isDeclarationFile;
